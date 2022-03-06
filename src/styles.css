@@ -50,9 +50,9 @@ p {
 
 .hero-area {
   display: flex;
-  flex-direction: column;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-text {
@@ -70,4 +70,27 @@ p {
   font-weight: 300;
   padding-top: 5px;
   margin-top: 20px;
+
+}
+
+.button:hover {
+  background-color: #ef744b;
+}
+
+.button:active {
+  background-color: #A9A9A9;
+  color: #808080;
+}
+
+.socials {
+  padding-bottom: 200px;
+}
+
+.logo {
+  height: 120px;
+  margin: 30px;
+}
+
+.social {
+  margin: 20px;
 }

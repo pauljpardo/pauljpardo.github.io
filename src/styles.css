@@ -1,10 +1,11 @@
-body {
+html, body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 section {
   background-color: white;
-  border: solid black 1px;
 }
 
 .hero {
@@ -48,6 +49,11 @@ h2 {
 p {
   margin: 0;
   font-size: 30px;
+  font-weight: 300;
+}
+
+.subtext {
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -104,6 +110,13 @@ p {
   padding: 80px;
 }
 
+.sub-section-alt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
 .headshot {
   width: 300px;
   border-radius: 100px;
@@ -112,4 +125,15 @@ p {
 .headshot-container {
   display: flex;
   align-items: center;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(162, 160, 160);
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
 }

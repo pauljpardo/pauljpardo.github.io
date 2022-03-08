@@ -1,15 +1,16 @@
-body {
+html, body {
   font-family: 'Poppins', sans-serif;
+  margin: auto;
+  padding: 0;
 }
 
 section {
   background-color: white;
-  border: solid black 1px;
 }
 
 .hero {
   background-color: #1c1d25;
-  height: 100vh;
+  height: 110vh;
   color: white;
   font-size: 40px;
 }
@@ -48,6 +49,11 @@ h2 {
 p {
   margin: 0;
   font-size: 30px;
+  font-weight: 300;
+}
+
+.subtext {
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -102,14 +108,124 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 80px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+}
+
+.tech-stack-ptag {
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.sub-section-alt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
 }
 
 .headshot {
   width: 300px;
-  border-radius: 100px;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 30px ;
 }
 
 .headshot-container {
   display: flex;
   align-items: center;
+}
+
+.project-card {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgb(162, 160, 160);
+  margin: 6px;
+}
+
+.project-card .project-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: auto;
+  width: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 10px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.hover__text {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover .hover__text {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.hover__text h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.fadeIn__top {
+  top: 20%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-image {
+  /* margin-top: 25px;
+  width: 250px;
+  border-radius: 125px; */
+  height: auto;
+  width: auto;
+  object-fit: cover; 
+}
+
+.stack__container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.stack__object svg, #figma{
+  object-fit: cover;
+  width: 50px;
+  height: auto;
+  margin: 0 0 5px;
+
 }

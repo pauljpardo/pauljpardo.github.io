@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/30b2091f8d.js" crossorigin="anonymous"></script>
   <title>Paul J Pardo - Full Stack Web Developer </title>
   <meta charset="UTF-8" />
 </head>
@@ -12,11 +13,14 @@
   <section class="hero">
     <nav>
       <img class="logo" src="src/imgs/karen.png" alt='karen logo'/>
-      <ul>
+      <ul id="nav-list">
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact-me">Contact</a></li>
       </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <div class="hero-area">
       <div class="hero-text">
@@ -99,6 +103,7 @@
 
   <section class="sub-section-alt" id="projects">
     <h2>Projects</h2>
+    <p>Hover or tap for info</p>
     <div class="project-container">
       <div class="project-card">
         <div class="project-overlay"></div>
@@ -158,6 +163,6 @@
     <p>pauljpardo@gmail.com</p>
   </footer>
 
-  <script src="src/app.js" ></script>
+  <script src="app.js" ></script>
 </body>
 </html>

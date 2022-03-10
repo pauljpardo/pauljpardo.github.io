@@ -4,11 +4,6 @@ html, body {
   padding: 0;
 }
 
-a:visited {
-  text-decoration: underline;
-  color: #ef744b;
-}
-
 section {
   background-color: white;
 }
@@ -214,6 +209,11 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
 }
 
 .github-drop-logo {

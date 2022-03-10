@@ -4,6 +4,11 @@ html, body {
   padding: 0;
 }
 
+a:visited {
+  text-decoration: underline;
+  color: #ef744b;
+}
+
 section {
   background-color: white;
 }
@@ -195,6 +200,11 @@ p {
   margin-bottom: 0.5em;
 }
 
+.subtext {
+ color:#fff;
+ margin: 10px 50px;
+}
+
 .fadeIn__top {
   top: 20%;
 }
@@ -206,10 +216,11 @@ p {
   align-items: center;
 }
 
-.project-image {
-  /* margin-top: 25px;
-  width: 250px;
-  border-radius: 125px; */
+.github-drop-logo {
+  margin-top: 20px;
+}
+
+.project-image  {
   height: auto;
   width: auto;
   object-fit: cover; 

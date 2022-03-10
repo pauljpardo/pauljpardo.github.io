@@ -4,11 +4,6 @@ html, body {
   padding: 0;
 }
 
-a:visited {
-  text-decoration: underline;
-  color: #ef744b;
-}
-
 section {
   background-color: white;
 }
@@ -21,8 +16,10 @@ section {
 }
 
 footer {
-  height: 500px;
   background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
 }
 
 nav {
@@ -216,6 +213,15 @@ p {
   align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
+}
+
 .github-drop-logo {
   margin-top: 20px;
 }
@@ -239,4 +245,9 @@ p {
   height: auto;
   margin: 0 0 5px;
 
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

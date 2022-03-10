@@ -35,6 +35,8 @@ ul {
   font-size: 30px;
 }
 
+
+
 li {
   text-decoration: none;
 }
@@ -198,8 +200,8 @@ p {
 }
 
 .subtext {
- color:#fff;
- margin: 10px 50px;
+  color:#fff;
+  margin: 10px 50px;
 }
 
 .fadeIn__top {
@@ -211,10 +213,6 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-@media only screen and (max-width: 1000px) {
-
 }
 
 .project-link {
@@ -250,4 +248,45 @@ p {
 a {
   text-decoration: none;
   color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+
+  ul {
+    display: none;
+    background-color: #2b2c38 ;
+    margin: 0px;
+  }
+
+
+nav {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #2b2c38;
+}
+
+.logo {
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
 }

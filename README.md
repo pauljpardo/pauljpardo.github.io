@@ -1,1 +1,3 @@
-# pauljpardo.github.io
+# My personal portfolio
+
+HTML CSS JS

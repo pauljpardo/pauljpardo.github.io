@@ -2,5 +2,4 @@
 
 HTML CSS JS
 
-
-pauljpardo.net
+(https://pauljpardo.netlify.app/)
